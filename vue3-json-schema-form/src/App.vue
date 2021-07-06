@@ -1,18 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import { defineComponent, PropType } from "vue"
 
 export default defineComponent({
   name: "App",
+  props: {
+    age: {
+      type: Number as PropType<number>,
+    },
+  },
   components: {
     HelloWorld,
   },
-});
+})
 </script>
 
 <style>
