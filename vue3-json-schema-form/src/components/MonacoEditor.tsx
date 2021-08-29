@@ -30,11 +30,12 @@ export default defineComponent({
         },
         onChange: {
             // type: Function as PropType<(value: string, event: Monaco.editor.IModelChangedEvent) => {}>,
-            type: Function as PropType<(value: string, event: any) => {}>,
+            // type: Function as PropType<(value: string, event: any) => {}>,
+            type: Function,
             required: true
         },
         title: {
-            type: String as PropType<String>,
+            type: String as PropType<string>,
             required: true
         }
     },
